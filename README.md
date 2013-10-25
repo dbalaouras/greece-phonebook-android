@@ -35,7 +35,7 @@ All the aforementioned libraries are included in the project as jar files under 
 
 ## License
 
-This software is licensed under the permissive [Apache Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html). Basically you are free to use and copy the source code if this project with very few restrictions. For a cleaner descritpnioplease read [this FAQ](http://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN) or [this description](http://www.tldrlegal.com/license/apache-license-2.0-%28apache-2.0%29).
+This software is licensed under the permissive [Apache Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html). Basically you are free to use and copy the source code if this project with very few restrictions. For a less vague description, go ahead and read [this FAQ](http://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN) or [this description](http://www.tldrlegal.com/license/apache-license-2.0-%28apache-2.0%29).
 
     Copyright (C) 2013 Dimitris Balaouras
 
