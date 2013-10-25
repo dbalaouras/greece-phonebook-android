@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Set the names of the expected entry categories -->
+    <string name="CAT_NAME_INFORMATION">Information</string>
+    <string name="CAT_NAME_EMBASSIES">Embassies</string>
+    <string name="CAT_NAME_TRANSPORTATION">Transportation</string>
+    <string name="CAT_NAME_PUBLIC_SERVICES">Public Services</string>
+    <string name="CAT_NAME_HELPLINES">Helplines</string>
+    <string name="CAT_NAME_POLICE">Police</string>
+    <string name="CAT_NAME_HEALTHCARE">HealthCare</string>
+    <string name="CAT_NAME_EMERGENCY">Emergency</string>
+    <string name="CAT_NAME_USER_DEFINED">User Defined</string>
+
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="gr.bytecode.apps.android.phonebook"
+    android:versionCode="1"
+    android:versionName="1.0 Rhodes" >
+
+    <!-- specify the target and min sdk versions -->
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <!-- Set the permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".application.AndroidApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/TXT_APPNAME"
+        android:theme="@style/AppTheme" >
+
+        <!-- Active Android Settings -->
+
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="@string/APP_DB_NAME" />
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="1" />
+
+        <!-- Android Services -->
+
+        <service android:name=".services.DataUpdaterService" >
+        </service>
+
+        <!-- Activities -->
+
+        <activity
+            android:name=".ui.activities.MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/TXT_APPNAME"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoStatusbar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="gr.evima.apps.android.HOME" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activities.EntryListActivity" >
+        </activity>
+        <activity android:name=".ui.activities.PreferencesActivity" >
+        </activity>
+        <activity android:name=".ui.activities.EditEntryActivity" >
+        </activity>
+    </application>
+
+</manifest>

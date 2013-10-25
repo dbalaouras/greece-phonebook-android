@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="BG_TILE_BLUE_EXTRA_LIGHT">#6FCFF2</color>
+    <color name="BG_TILE_BLUE_EXTRA_LIGHT_PRESSED">#806FCFF2</color>
+    <color name="BG_TILE_BLUE_LIGHT">#4BC6F2</color>
+    <color name="BG_TILE_BLUE_LIGHT_PRESSED">#804BC6F2</color>
+    <color name="BG_TILE_BLUE">#33B5E5</color>
+    <color name="BG_TILE_BLUE_PRESSED">#8033B5E5</color>
+
+</resources>

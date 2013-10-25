@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/add"
+        android:icon="@drawable/ic_menu_add"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/TXT_ADD"/>
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_menu_settings"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/ACTION_SETTINGS"/>
+
+</menu>

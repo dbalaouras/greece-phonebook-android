@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="data_check_interval_values">
+        <item name="1">1</item>
+        <item name="7">7</item>
+        <item name="30">30</item>
+        <item name="90">90</item>
+    </string-array>
+    <string-array name="data_check_interval_desc">
+        <item name="1">@string/ΤΧΤ_EVERY_DAY</item>
+        <item name="7">@string/ΤΧΤ_EVERY_7_DAYS</item>
+        <item name="30">@string/ΤΧΤ_EVERY_30_DAYS</item>
+        <item name="90">@string/ΤΧΤ_EVERY_90_DAYS</item>
+    </string-array>
+
+</resources>

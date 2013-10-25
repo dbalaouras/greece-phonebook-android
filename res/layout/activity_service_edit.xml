@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/activity_theme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/main"
+        style="@style/app_container_large_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="55dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/form_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/form_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/TXT_NAME" />
+
+                <EditText
+                    android:id="@+id/name"
+                    style="@style/form_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/TXT_TIP_ORGANIZATION_NAME"
+                    android:inputType="textPersonName" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/form_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/form_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/TXT_PHONE_NUMBER" />
+
+                <EditText
+                    android:id="@+id/phone_number"
+                    style="@style/form_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/TXT_TIP_PHONE_NUMBER"
+                    android:inputType="phone" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/form_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/form_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/TXT_WEBSITE_ADDRESS" />
+
+                <EditText
+                    android:id="@+id/website_address"
+                    style="@style/form_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/TXT_TIP_WEBSITE_ADDRESS"
+                    android:inputType="textUri" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/share_entry_row"
+                style="@style/form_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <CheckBox
+                    android:id="@+id/upload_entry"
+                    style="@style/form_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:hint="@string/TXT_SHARE_THIS_ENTRY" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/menu_emergency"
+                style="@style/main_menu_tile_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_tile_blue_light"
+                android:onClick="save"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="@string/LBL_SAVE"
+                android:textSize="25sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/form_header" />
+
+    <ImageView
+        android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/ΤΧΤ_EMPTY"
+        android:gravity="center_horizontal"
+        android:src="@drawable/bottom_shadow" />
+
+</RelativeLayout>

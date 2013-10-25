@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/menu_emergency"
+            style="@style/main_menu_tile_top"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_tile_blue_extra_light"
+            android:drawableTop="@drawable/ambulance_front_icon"
+            android:onClick="showEntryList"
+            android:text="@string/LBL_EMERGENCY" />
+
+        <TextView
+            android:id="@+id/menu_healthcare"
+            style="@style/main_menu_tile_top"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_tile_blue_light"
+            android:drawableTop="@drawable/healthpack_icon"
+            android:onClick="showEntryList"
+            android:text="@string/LBL_HEALTHCARE" />
+
+        <TextView
+            android:id="@+id/menu_police"
+            style="@style/main_menu_tile_top"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_tile_blue"
+            android:drawableTop="@drawable/cop_icon"
+            android:onClick="showEntryList"
+            android:text="@string/LBL_POLICE" />
+    </LinearLayout>
+
+    <View
+        style="@style/main_menu_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" >
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/menu_helplines"
+            style="@style/main_menu_tile"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/emergency_icon"
+            android:onClick="showEntryList"
+            android:text="@string/LBL_HELPLINES" />
+
+        <View
+            style="@style/main_menu_line"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" >
+        </View>
+
+        <TextView
+            android:id="@+id/menu_public_services"
+            style="@style/main_menu_tile"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/people_icon"
+            android:onClick="showEntryList"
+            android:text="@string/LBL_PUBLIC_SERVCES" />
+
+        <View
+            style="@style/main_menu_line"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" >
+        </View>
+
+        <TextView
+            android:id="@+id/menu_info"
+            style="@style/main_menu_tile"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/info_icon_simple"
+            android:onClick="showEntryList"
+            android:text="@string/LBL_INFORMATION" />
+    </LinearLayout>
+
+    <View
+        style="@style/main_menu_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" >
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/menu_transportation"
+            style="@style/main_menu_tile"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/airplane_icon"
+            android:onClick="showEntryList"
+            android:text="@string/LBL_TRANSPORTATION" />
+
+        <View
+            style="@style/main_menu_line"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" >
+        </View>
+
+        <TextView
+            android:id="@+id/menu_embassies"
+            style="@style/main_menu_tile"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/embassies_icon_blue"
+            android:onClick="showEntryList"
+            android:text="@string/LBL_EMBASSIES" />
+
+        <View
+            style="@style/main_menu_line"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" >
+        </View>
+
+        <TextView
+            android:id="@+id/menu_user"
+            style="@style/main_menu_tile"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/user_category"
+            android:onClick="showEntryList"
+            android:text="@string/TXT_CUSTOM" />
+    </LinearLayout>
+
+</LinearLayout>

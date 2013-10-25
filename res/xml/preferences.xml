@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="@string/PREFCAT_DATA_SYNCH"
+        android:title="@string/TXT_CAT_DATA_SYNCH" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/PREF_AUTO_DATA_CHECK"
+            android:summary="@string/TXT_SUMMARY_AUTO_DATA_CHECK"
+            android:summaryOff="@string/TXT_INACTIVE"
+            android:summaryOn="@string/TXT_ACTIVE"
+            android:title="@string/TXT_TITLE_AUTO_DATA_CHECK" />
+
+        <ListPreference
+            android:defaultValue="7"
+            android:dependency="@string/PREF_AUTO_DATA_CHECK"
+            android:entries="@array/data_check_interval_desc"
+            android:entryValues="@array/data_check_interval_values"
+            android:key="@string/PREF_AUTO_DATA_CHECK_INTERVAL"
+            android:summary="@string/TXT_SUMMARY_AUTO_DATA_CHECK_INTERVAL"
+            android:title="@string/TXT_TITLE_AUTO_DATA_CHECK_INTERVAL" />
+
+        <Preference
+            android:defaultValue="@string/TXT_NEVER_CHECKED"
+            android:icon="@drawable/reload_icon"
+            android:key="@string/PREF_DATA_CHECK_NOW"
+            android:summary="@string/TXT_NEVER_CHECKED"
+            android:title="@string/LBL_CHECK_DATA_NOW" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="@string/PREFCAT_BYTECODE"
+        android:title="@string/TXT_CAT_BYTECODE" >
+        <Preference
+            android:icon="@drawable/b_logo"
+            android:key="@string/PREF_VISIT_BYTECODE"
+            android:summary="@string/TXT_VISIT_BYTECODE"
+            android:title="@string/LBL_VISIT_BYTECODE" />
+        <Preference
+            android:icon="@drawable/mail_icon"
+            android:key="@string/PREF_EMAIL_US"
+            android:summary="@string/TXT_SEND_US_AN_EMAIL"
+            android:title="@string/LBL_SEND_EMAIL" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="@string/PREFCAT_FEATURES"
+        android:title="@string/TXT_CAT_FEATURES" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/PREF_HOVER_CALL"
+            android:summary="@string/TXT_HOVER_CALL"
+            android:title="@string/TITLE_HOVER_CALL" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
