@@ -35,7 +35,7 @@ All the aforementioned libraries are included in the project as jar files under 
 
 ## License
 
-This software is licensed under the permissive [Apache Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html). Basically you are free to use and copy the source code if this project with very few restrictions. For a cleaner descritpnioplease read [this FAQ](http://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN).
+This software is licensed under the permissive [Apache Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html). Basically you are free to use and copy the source code if this project with very few restrictions. For a cleaner descritpnioplease read [this FAQ](http://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN) or [this description](http://www.tldrlegal.com/license/apache-license-2.0-%28apache-2.0%29).
 
     Copyright (C) 2013 Dimitris Balaouras
 
@@ -61,6 +61,8 @@ Here's my contact details:
     Email: dbalaouras@gmail.com
     Tel. : +30 2410 2310 20
     Website: http://bytecode.gr
+    Linked-in: http://www.linkedin.com/in/dbalaouras
+    Twitter: https://twitter.com/dbalaouras
 
 [1]: https://github.com/dbalaouras/visitorphonebook
 [2]: http://actionbarsherlock.com/
