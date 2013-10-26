@@ -80,5 +80,7 @@
     <string name="ERROR_NOT_VALID_WEB_ADDRESS">This is not a valid Web Address</string>
     <string name="ERROR_REQUIRED_FIELD">Required data</string>
     <string name="ERROR_NO_NETWORK">Internet connection is not available at this time</string>
+    <string name="TXT_HTTP_PREFIX">http://</string>
+    <string name="TXT_CAT_BYTECODE">ByteCode.gr</string>
 
 </resources>

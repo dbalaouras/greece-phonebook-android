@@ -1,7 +1,6 @@
 package gr.bytecode.apps.android.phonebook.ui.activities;
 
 import gr.bytecode.apps.android.phonebook.R;
-import gr.bytecode.apps.android.phonebook.application.AppUtil;
 import gr.bytecode.apps.android.phonebook.repositories.PreferencesRepository;
 import android.content.Context;
 import android.content.Intent;
@@ -255,8 +254,6 @@ abstract public class BaseActivity extends SherlockFragmentActivity implements S
 
 		// get the distance
 		float distance = event.values[0];
-
-		AppUtil.logInfo("Distance is: " + distance);
 
 		// if the distance is shorter than 2 cm, call 112
 		if (distance < 2) {

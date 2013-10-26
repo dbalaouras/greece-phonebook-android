@@ -115,12 +115,12 @@ public class EntryListActivity extends BaseActivity {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see com.actionbarsherlock.app.SherlockFragmentActivity#onStop()
+	 * @see com.actionbarsherlock.app.SherlockFragmentActivity#onDestroy()
 	 */
-	public void onStop() {
+	public void onDestroy() {
 
 		// call parent
-		super.onStop();
+		super.onDestroy();
 
 		// Unregister since the activity is not visible
 		unregisterReceiver(dataUpdatedReceiver);

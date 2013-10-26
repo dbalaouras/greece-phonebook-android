@@ -28,7 +28,7 @@
 
         <meta-data
             android:name="AA_DB_NAME"
-            android:value="@string/APP_DB_NAME" />
+            android:value="GreecePhonebook.sql" />
         <meta-data
             android:name="AA_DB_VERSION"
             android:value="1" />
