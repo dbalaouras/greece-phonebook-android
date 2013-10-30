@@ -39,7 +39,7 @@
     <string name="TXT_SEND_US_AN_EMAIL">Send us your feedback</string>
     <string name="TXT_BYTECODE_EMAIL">phonebook@bytecode.gr</string>
     <string name="TXT_BYTECODE_URL">http://bytecode.gr</string>
-    <string name="TXT_SEND_EMAIL_SUBJ">[PhoneBook App] Message from#8230;</string>
+    <string name="TXT_SEND_EMAIL_SUBJ">[PhoneBook App] New message</string>
     <string name="TXT_VISIT_BYTECODE">Browse our website</string>
     <string name="TITLE_SEND_EMAIL_CHOOSER">Contact ByteCode.gr</string>
     <string name="ΤΧΤ_EVERY_DAY">Daily</string>

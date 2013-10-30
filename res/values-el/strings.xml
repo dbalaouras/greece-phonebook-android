@@ -38,7 +38,7 @@
     <string name="TXT_SEND_US_AN_EMAIL">Στείλε μας ένα σχόλιο</string>
     <string name="TXT_BYTECODE_EMAIL">phonebook@bytecode.gr</string>
     <string name="TXT_BYTECODE_URL">http://bytecode.gr</string>
-    <string name="TXT_SEND_EMAIL_SUBJ">[PhoneBook Android App] Μήνυμα από #8230;</string>
+    <string name="TXT_SEND_EMAIL_SUBJ">[PhoneBook Android App] Νέο Μήνυμα</string>
     <string name="TXT_VISIT_BYTECODE">Επίσκεψη στο ByteCode.gr</string>
     <string name="TITLE_SEND_EMAIL_CHOOSER">Επικοινώνησε με την ByteCode.gr</string>
     <string name="ΤΧΤ_EVERY_DAY">Ημερησίως</string>

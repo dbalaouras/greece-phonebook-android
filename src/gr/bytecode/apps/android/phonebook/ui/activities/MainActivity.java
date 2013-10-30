@@ -39,7 +39,7 @@ public class MainActivity extends BaseActivity {
 		// get a preferences repository
 		PreferencesRepository preferecensRepository = PreferencesRepository.getInstance(mcontext);
 
-		// check whether we need to set the default valus on the preferences
+		// check whether we need to set the default values on the preferences
 		if (!preferecensRepository.isDefaultPreferencesSet()) {
 			PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
 		}

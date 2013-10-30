@@ -63,7 +63,7 @@ public class EntryCategory extends Model implements Serializable {
 	}
 
 	/**
-	 * Get a list of telephone that belong to this category
+	 * Get a list of telephone that belong to this category ordered by category
 	 * 
 	 * @return
 	 */

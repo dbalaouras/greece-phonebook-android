@@ -61,8 +61,11 @@ public class EntryRepository extends BaseRepository<Entry> {
 		EntryCategory entryCategoryModel = new Select().from(EntryCategory.class)
 				.where("name = ?", categoryName).executeSingle();
 
+		// load all entries ordered by name
 		if (entryCategoryModel != null)
-			entries = entryCategoryModel.getEntries();
+			entries = new Select().from(Entry.class)
+					.where("EntryCategory" + "=?", entryCategoryModel.getId()).orderBy("Name")
+					.execute();
 
 		return entries;
 	}
@@ -88,8 +91,7 @@ public class EntryRepository extends BaseRepository<Entry> {
 
 		// Delete the entity model without loading it from the database
 		new Delete().from(modelClass)
-				.where("CategoryId = ? AND UserOwned = 0", entryCategory.getExternalId())
-				.execute();
+				.where("CategoryId = ? AND UserOwned = 0", entryCategory.getExternalId()).execute();
 	}
 
 	/**

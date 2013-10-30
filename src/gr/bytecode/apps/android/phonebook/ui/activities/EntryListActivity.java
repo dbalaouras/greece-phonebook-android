@@ -135,11 +135,8 @@ public class EntryListActivity extends BaseActivity {
 	 */
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
-		System.out.println(requestCode);
-		System.out.println(resultCode);
-
 		// if all was okay, update the fragment
-		if (requestCode == REQUEST_EDIT && resultCode == RESULT_OK) {
+		if ((requestCode == REQUEST_EDIT || requestCode == REQUEST_NEW) && resultCode == RESULT_OK) {
 
 			// notify the current fragment that the data has changed
 			notifyCurrentFragmentForDataChanged();

@@ -196,8 +196,6 @@ public class DataUpdaterService extends IntentService {
 			intent.setAction(AppConstants.DATA_UPDATED_ACTION);
 			sendBroadcast(intent);
 
-			System.out.println("BROADCASTED");
-
 		} catch (EntityNotRemovedException e) {
 
 			e.printStackTrace();
@@ -379,7 +377,7 @@ public class DataUpdaterService extends IntentService {
 		// create a notification
 		NotificationCompat.Builder notificationbBuilder = new NotificationCompat.Builder(context)
 				.setContentTitle(notificationTitle).setTicker(notificationTitle)
-				.setContentText(notificationSubTitle).setSmallIcon(R.drawable.ic_launcher)
+				.setContentText(notificationSubTitle).setSmallIcon(R.drawable.ic_notification)
 				.setContentIntent(PendingIntent.getActivity(context, 0, actionIntent, 0));
 
 		// add notification vibration

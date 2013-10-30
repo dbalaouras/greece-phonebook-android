@@ -178,7 +178,7 @@ public class JsonDataParser implements DataParser<String> {
 				JsonMappingException, IOException {
 
 			Version version = new Version(node.path("Id").asInt(), node.path("Name").asText(), node
-					.path("Version").asInt());
+					.path("Value").asInt());
 
 			return version;
 
