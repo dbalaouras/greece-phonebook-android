@@ -10,6 +10,8 @@ import com.activeandroid.query.Delete;
 import com.activeandroid.query.Select;
 
 /**
+ * A repository of <link>Entry</link> records
+ * 
  * @author Dimitris Balaouras
  * @copyright 2013 ByteCode.gr
  * 

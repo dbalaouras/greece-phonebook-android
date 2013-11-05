@@ -4,42 +4,26 @@
     android:layout_height="wrap_content"
     android:layout_marginBottom="20dp"
     android:layout_marginTop="50dp"
-    android:gravity="center_horizontal"
-    android:orientation="vertical" >
+    android:gravity="center_horizontal" >
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/header_strip"
+        style="@style/logo_ribon"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="@string/TITLE_GREECE_VISITOR" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/logo_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical|center_horizontal"
-        android:orientation="vertical" >
-
-        <TextView
-            android:id="@+id/txt_greek"
-            style="@style/logo_textview"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:layout_marginLeft="10dp"
-            android:background="@color/BG_TILE_BLUE_LIGHT"
-            android:paddingBottom="1dp"
-            android:paddingLeft="80dp"
-            android:paddingRight="10dp"
-            android:paddingTop="1dp"
-            android:text="@string/TITLE_GREECE_VISITOR"
-            android:textColor="#FFFFFF"
-            android:textSize="25sp" >
-        </TextView>
-
-        <TextView
-            android:id="@+id/txt_agenda"
-            style="@style/logo_textview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:text="@string/TITLE_PHONEBOOK"
-            android:textSize="42sp" >
-        </TextView>
-    </LinearLayout>
+        android:layout_below="@id/header_strip"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/TITLE_PHONEBOOK"
+        android:textSize="42sp" >
+    </TextView>
 
 </RelativeLayout>

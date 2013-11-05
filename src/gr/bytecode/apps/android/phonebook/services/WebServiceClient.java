@@ -1,6 +1,9 @@
 package gr.bytecode.apps.android.phonebook.services;
 
 /**
+ * Phonebook webservice interface. Defined the construct that a concrete
+ * implementation of a WS client should honor.
+ * 
  * @author Dimitris Balaouras
  * @copyright 2013 ByteCode.gr
  * 

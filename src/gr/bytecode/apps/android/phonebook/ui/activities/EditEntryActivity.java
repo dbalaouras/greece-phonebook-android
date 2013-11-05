@@ -16,6 +16,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 /**
+ * The activity that implements the entry editing functionality
+ * 
  * @author Dimitris Balaouras
  * @copyright 2013 ByteCode.gr
  * 
@@ -122,7 +124,7 @@ public class EditEntryActivity extends BaseActivity {
 		nameTextView = (EditText) findViewById(R.id.name);
 		phoneNumberTextView = (EditText) findViewById(R.id.phone_number);
 		webAddressTextview = (EditText) findViewById(R.id.website_address);
-		titleTextview = (TextView) findViewById(R.id.txt_header);
+		titleTextview = (TextView) findViewById(R.id.txt_title);
 		shareRow = (View) findViewById(R.id.share_entry_row);
 
 		// initiate a entry if none was sent
@@ -136,7 +138,8 @@ public class EditEntryActivity extends BaseActivity {
 			entry.setUserOwned(true);
 
 			// this is a new addition: show the share row
-			shareRow.setVisibility(View.VISIBLE);
+			// (disabling until sharing is implemented)
+			// shareRow.setVisibility(View.VISIBLE);
 
 		} else {
 
@@ -154,6 +157,7 @@ public class EditEntryActivity extends BaseActivity {
 			}
 
 			// this is not a new addition; hide it
+			// (disabling until sharing is implemented)
 			shareRow.setVisibility(View.GONE);
 
 		}

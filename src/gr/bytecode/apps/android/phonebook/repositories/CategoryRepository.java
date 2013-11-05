@@ -7,6 +7,8 @@ import java.util.List;
 import com.activeandroid.query.Select;
 
 /**
+ * A repository of <link>EntryCategory</link> records
+ * 
  * @author Dimitris Balaouras
  * @copyright 2013 ByteCode.gr
  * 
@@ -54,8 +56,7 @@ public class CategoryRepository extends BaseRepository<EntryCategory> {
 	public List<EntryCategory> getEntryCategories() {
 
 		// get all the entry categories
-		List<EntryCategory> entryCategories = new Select().from(EntryCategory.class)
-				.execute();
+		List<EntryCategory> entryCategories = new Select().from(EntryCategory.class).execute();
 
 		return entryCategories;
 	}

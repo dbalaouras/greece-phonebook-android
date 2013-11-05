@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="gr.bytecode.apps.android.phonebook"
-    android:versionCode="3"
-    android:versionName="Rhodes 1.0.2 Beta" >
+    android:versionCode="4"
+    android:versionName="Rhodes 1.0.3 Beta" >
 
     <!-- specify the target and min sdk versions -->
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="7"
         android:targetSdkVersion="19" />
 
     <!-- Set the permissions -->
@@ -16,6 +16,9 @@
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.FLASHLIGHT" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- exclude the tablets; the app looks kinda crap on them -->
+    <supports-screens android:xlargeScreens="false" />
 
     <application
         android:name=".application.AndroidApplication"

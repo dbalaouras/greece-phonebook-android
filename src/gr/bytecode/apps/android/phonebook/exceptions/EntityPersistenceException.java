@@ -1,6 +1,8 @@
 package gr.bytecode.apps.android.phonebook.exceptions;
 
 /**
+ * Generic Exception thrown by repositories in case of persistence errors
+ * 
  * @author Dimitris Balaouras
  * @since Apr 25, 2012 8:15:12 PM
  * 
@@ -16,6 +18,7 @@ public class EntityPersistenceException extends Exception {
 	 * Default Constructor
 	 */
 	public EntityPersistenceException() {
+
 		super();
 	}
 
@@ -26,6 +29,7 @@ public class EntityPersistenceException extends Exception {
 	 *            A meaningful message describing this Exception
 	 */
 	public EntityPersistenceException(String s) {
+
 		super(s);
 	}
 }

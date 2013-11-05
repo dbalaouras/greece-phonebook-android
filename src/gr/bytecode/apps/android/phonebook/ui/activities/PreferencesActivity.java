@@ -31,8 +31,11 @@ import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockPreferenceActivity;
 import com.actionbarsherlock.view.MenuItem;
 import com.actionbarsherlock.view.Window;
+import com.google.analytics.tracking.android.EasyTracker;
 
 /**
+ * The activity that implements the preferences dashboard
+ * 
  * @author Dimitris Balaouras
  * @copyright 2013 ByteCode.gr
  * 
@@ -81,6 +84,34 @@ public class PreferencesActivity extends SherlockPreferenceActivity implements
 	private PreferenceScreen prefScreen;
 
 	private static String PREF_AUTO_DATA_CHECK_INTERVAL;
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see android.support.v4.app.FragmentActivity#onStart()
+	 */
+	@Override
+	public void onStart() {
+
+		super.onStart();
+
+		// start G-A tracker
+		EasyTracker.getInstance(this).activityStart(this);
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see com.actionbarsherlock.app.SherlockFragmentActivity#onStop()
+	 */
+	@Override
+	public void onStop() {
+
+		super.onStop();
+
+		// stop G-A tracker
+		EasyTracker.getInstance(this).activityStop(this);
+	}
 
 	/** Called when the activity is first created. */
 	@SuppressWarnings("deprecation")

@@ -2,29 +2,19 @@ package gr.bytecode.apps.android.phonebook.application;
 
 import android.annotation.SuppressLint;
 import android.app.Application;
-import android.content.res.Configuration;
 
 import com.activeandroid.ActiveAndroid;
 
 /**
+ * Overrriding the default android application class so that we can set the
+ * strict mode during debugging.
+ * 
  * @author Dimitris Balaouras
  * @copyright 2013 ByteCode.gr
  * 
  */
 
 public class AndroidApplication extends Application {
-
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see android.app.Application#onConfigurationChanged(android.content.res.
-	 * Configuration)
-	 */
-	@Override
-	public void onConfigurationChanged(Configuration newConfig) {
-
-		super.onConfigurationChanged(newConfig);
-	}
 
 	/*
 	 * (non-Javadoc)
@@ -50,27 +40,5 @@ public class AndroidApplication extends Application {
 		//
 		// }
 
-	}
-
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see android.app.Application#onLowMemory()
-	 */
-	@Override
-	public void onLowMemory() {
-
-		super.onLowMemory();
-	}
-
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see android.app.Application#onTerminate()
-	 */
-	@Override
-	public void onTerminate() {
-
-		super.onTerminate();
 	}
 }

@@ -1,8 +1,10 @@
 package gr.bytecode.apps.android.phonebook.exceptions;
 
 /**
+ * Exception thrown in cases of currupted or invalid data
+ * 
  * @author Dimitris Balaouras
- * @since Apr 25, 2012 8:15:15 PM
+ * @copyright 2013 ByteCode.gr
  * 
  */
 public class InvalidDataException extends Exception {
@@ -16,6 +18,7 @@ public class InvalidDataException extends Exception {
 	 * Default Constructor
 	 */
 	public InvalidDataException() {
+
 		super();
 	}
 
@@ -26,6 +29,7 @@ public class InvalidDataException extends Exception {
 	 *            A meaningful message describing this Exception
 	 */
 	public InvalidDataException(String s) {
+
 		super(s);
 	}
 

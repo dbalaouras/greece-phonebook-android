@@ -17,8 +17,11 @@ import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
+import com.google.analytics.tracking.android.EasyTracker;
 
 /**
+ * Implements the basic functionality of most activities of the app
+ * 
  * @author Dimitris Balaouras
  * @copyright 2013 ByteCode.gr
  * 
@@ -84,6 +87,34 @@ abstract public class BaseActivity extends SherlockFragmentActivity implements S
 		intent.setData(Uri.parse(String.format("tel:%s",
 				getString(R.string.NUM_DEFAULT_CALL_NUMBER))));
 		mcontext.startActivity(intent);
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see android.support.v4.app.FragmentActivity#onStart()
+	 */
+	@Override
+	public void onStart() {
+
+		super.onStart();
+
+		// start G-A tracker
+		EasyTracker.getInstance(this).activityStart(this);
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see com.actionbarsherlock.app.SherlockFragmentActivity#onStop()
+	 */
+	@Override
+	public void onStop() {
+
+		super.onStop();
+
+		// stop G-A tracker
+		EasyTracker.getInstance(this).activityStop(this);
 	}
 
 	/*

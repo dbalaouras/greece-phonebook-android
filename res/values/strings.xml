@@ -19,7 +19,7 @@
     <string name="LBL_EMERGENCY">Emergency</string>
     <string name="LBL_HEALTHCARE">Healthcare</string>
     <string name="LBL_112">Call 112</string>
-    <string name="LBL_SETTINGS">Setrings</string>
+    <string name="LBL_SETTINGS">Settings</string>
     <string name="LBL_CHECK_DATA_NOW">Check for new data now</string>
     <string name="LBL_RELOAD_DATA_NOW">Reload data now</string>
     <string name="LBL_SEND_EMAIL">Contact Bytecode</string>

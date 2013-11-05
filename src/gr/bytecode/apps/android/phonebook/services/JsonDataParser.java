@@ -17,6 +17,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
  * A Parser of Phonebook data, formed in JavaScript Object Notation (JSON)
+ * Implementation of <link>DataParser</link>
  * 
  * @author Dimitris Balaouras
  * @copyright 2013 ByteCode.gr

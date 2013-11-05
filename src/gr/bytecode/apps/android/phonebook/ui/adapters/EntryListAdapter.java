@@ -17,6 +17,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
+ * The data adapter of a single entry list, responsible for both filling in the
+ * entry list view items as well as listening on click/tap events.
+ * 
  * @author Dimitris Balaouras
  * @copyright 2013 ByteCode.gr
  * 

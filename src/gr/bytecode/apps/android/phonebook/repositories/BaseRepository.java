@@ -11,11 +11,14 @@ import com.activeandroid.query.Delete;
 import com.activeandroid.query.Select;
 
 /**
+ * A base repository that implements the most common functionality of all
+ * repositories of the app
+ * 
  * @author Dimitris Balaouras
  * @copyright 2013 ByteCode.gr
  * 
  */
-public class BaseRepository<E extends Model> {
+abstract public class BaseRepository<E extends Model> {
 
 	// reference to the Class name of the model we are using
 	Class<E> modelClass;

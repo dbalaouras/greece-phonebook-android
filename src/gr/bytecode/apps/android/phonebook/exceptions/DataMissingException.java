@@ -1,6 +1,8 @@
 package gr.bytecode.apps.android.phonebook.exceptions;
 
 /**
+ * Exception thrown in case of missing data
+ * 
  * @author Dimitris Balaouras
  * @since Apr 25, 2012 8:15:15 PM
  * 

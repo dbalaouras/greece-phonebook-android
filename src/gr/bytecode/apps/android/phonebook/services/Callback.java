@@ -1,7 +1,7 @@
 package gr.bytecode.apps.android.phonebook.services;
 
 /**
- * Interface for a callback objects
+ * Interface for callback objects
  * 
  * @author Dimitris Balaouras
  * @copyright 2013 ByteCode.gr

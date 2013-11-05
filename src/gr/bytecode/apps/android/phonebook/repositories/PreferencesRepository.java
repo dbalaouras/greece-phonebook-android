@@ -18,6 +18,8 @@ import android.content.SharedPreferences.Editor;
 import android.preference.PreferenceManager;
 
 /**
+ * A repository of application preferences
+ * 
  * @author Dimitris Balaouras
  * @copyright 2013 ByteCode.gr
  * 

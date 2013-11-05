@@ -7,6 +7,8 @@ import gr.bytecode.apps.android.phonebook.entities.Version;
 import java.util.Iterator;
 
 /**
+ * Phonebook data parsing interface
+ * 
  * @author Dimitris Balaouras
  * @copyright 2013 ByteCode.gr
  * 

@@ -3,6 +3,9 @@ package gr.bytecode.apps.android.phonebook.ui.adapters;
 import gr.bytecode.apps.android.phonebook.entities.Entry;
 
 /**
+ * The interface that should be implemented by listeners of entry-items
+ * clicks/taps.
+ * 
  * @author Dimitris Balaouras
  * @copyright 2013 ByteCode.gr
  * 

@@ -5,6 +5,8 @@ import gr.bytecode.apps.android.phonebook.entities.Version;
 import com.activeandroid.query.Select;
 
 /**
+ * A repository of <link>Version</link> records
+ * 
  * @author Dimitris Balaouras
  * @copyright 2013 ByteCode.gr
  * 

@@ -8,20 +8,16 @@
     android:orientation="vertical" >
 
     <TextView
-        android:id="@+id/txt_header"
-        style="@style/logo_textview"
+        android:id="@+id/txt_title"
+        style="@style/logo_ribon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="left"
         android:layout_marginLeft="10dp"
-        android:background="@color/BG_TILE_BLUE_EXTRA_LIGHT"
         android:gravity="center_vertical|center_horizontal"
-        android:paddingBottom="1dp"
-        android:paddingLeft="10dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="30dp"
         android:paddingRight="10dp"
-        android:paddingTop="1dp"
-        android:textColor="#FFFFFF"
-        android:textSize="25sp" >
+        android:paddingTop="5dp" >
     </TextView>
 
 </RelativeLayout>

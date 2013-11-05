@@ -26,6 +26,8 @@ import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
 
 /**
+ * The activity that lists the entries
+ * 
  * @author Dimitris Balaouras
  * @copyright 2013 ByteCode.gr
  * 

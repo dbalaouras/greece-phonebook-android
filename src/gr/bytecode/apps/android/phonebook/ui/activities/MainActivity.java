@@ -13,6 +13,8 @@ import com.pollfish.constants.Position;
 import com.pollfish.main.PollFish;
 
 /**
+ * The main activity of the app that includes the main menu
+ * 
  * @author Dimitris Balaouras
  * @copyright 2013 ByteCode.gr
  * 
