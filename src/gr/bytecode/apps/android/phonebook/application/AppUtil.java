@@ -48,8 +48,10 @@ public class AppUtil {
 	 */
 	public static void initiateDataCheckService(Context context) {
 
+		// get an instance of user preferences repository
 		PreferencesRepository preferencesRepository = PreferencesRepository.getInstance(context);
 
+		// retrieve the check interval from the preferences
 		int checkInterval = preferencesRepository.getDataCheckInteral();
 
 		// check data if we are connected and auto data check is enabled by the
@@ -93,7 +95,7 @@ public class AppUtil {
 		ConnectivityManager connectivity = (ConnectivityManager) context
 				.getSystemService(Context.CONNECTIVITY_SERVICE);
 		if (connectivity == null) {
-			System.out.println("Device is NOT connected!");
+
 			return false;
 		} else {
 			NetworkInfo[] info = connectivity.getAllNetworkInfo();
