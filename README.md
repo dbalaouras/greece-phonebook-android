@@ -8,14 +8,17 @@ This application is part of the broader project "Visitor Phonebook". For more in
 
 ## Dependencies
 
-The project depends on the Actionbar Sherlocl library which can be doanloaded from [here][2].
-Other dependencies include:
+The project depends on two Android projects: 
+* The [Actionbar Sherlock][2] library which can be downloaded from [here][2] and
+* And the [ActiveAndroid][5] ORM which you can download from [Github][5].
+
+It also requires a few Java libraries:
 * jackson-annotations
 * jackson-core
 * jackson-databind
 * pollfish
 
-All the aforementioned libraries are included in the project as jar files under the "libs" folder.
+All the above libraries are included in the project as jar files under the "libs" folder.
 
 ## Setup the project in Eclipse
 
@@ -30,7 +33,8 @@ All the aforementioned libraries are included in the project as jar files under 
   1. Project->Properties->Android
   2. At the Library section hit the "Add" button
   3. Select the ActionbarSherlock project from the dialog and hit okay. If you can't see the ActionbarSherlock project in the dialog, then you probably haven't imported it properly.
-5. You are done
+5. Download and setup ActiveAndroid (follow the "Adding the JAR" instructions shown [here][5]
+6. You are done
 
 
 ## License
@@ -68,3 +72,4 @@ Here's my contact details:
 [2]: http://actionbarsherlock.com/
 [3]: http://www.youtube.com/watch?v=4GJ6yY1lNNY#t=119
 [4]: http://bytecode.gr
+[5]: https://github.com/pardom/ActiveAndroid/wiki/Getting-started
