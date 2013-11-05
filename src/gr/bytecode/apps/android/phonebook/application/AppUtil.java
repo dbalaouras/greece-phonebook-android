@@ -62,8 +62,6 @@ public class AppUtil {
 			// if the check interval is set to a positive integer (days)
 			Date lastCheckDate = preferencesRepository.getLastDataCheckDate();
 
-			System.out.println(lastCheckDate);
-
 			// if the last check is null (never updated(!)) or the last
 			// update did not occur recently, then check is required
 			if (lastCheckDate != null) {

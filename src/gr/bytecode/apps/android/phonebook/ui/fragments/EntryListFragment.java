@@ -220,6 +220,7 @@ public class EntryListFragment extends Fragment {
 
 			mProgressContainer.setVisibility(View.GONE);
 			mListContainer.setVisibility(View.VISIBLE);
+
 		} else {
 
 			mProgressContainer.setVisibility(View.VISIBLE);
@@ -258,6 +259,7 @@ public class EntryListFragment extends Fragment {
 
 		// now check if we have something to show or not
 		if (entries.size() > 0) {
+
 			setListShown(true);
 
 		} else {
@@ -265,6 +267,8 @@ public class EntryListFragment extends Fragment {
 			emptyMessageView.setVisibility(View.VISIBLE);
 			mListContainer.setVisibility(View.GONE);
 			mProgressContainer.setVisibility(View.GONE);
+
+			mListShown = false;
 		}
 	}
 
@@ -305,6 +309,7 @@ public class EntryListFragment extends Fragment {
 			super.onPostExecute(entries);
 
 			setListAdapter(entries);
+
 		}
 
 	}

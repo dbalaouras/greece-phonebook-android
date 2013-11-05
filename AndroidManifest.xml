@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="gr.bytecode.apps.android.phonebook"
     android:versionCode="4"
-    android:versionName="Rhodes 1.0.3 Beta" >
+    android:versionName="Rhodes 1.0.4 Beta" >
 
     <!-- specify the target and min sdk versions -->
     <uses-sdk
