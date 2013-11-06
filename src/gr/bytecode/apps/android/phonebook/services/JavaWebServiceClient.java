@@ -82,8 +82,6 @@ public class JavaWebServiceClient implements WebServiceClient {
 			// download data
 			String data = downloadUrlData(url);
 
-			System.out.println(url);
-
 			if (data != null) {
 
 				// Default Jackson Json ObjectMapper

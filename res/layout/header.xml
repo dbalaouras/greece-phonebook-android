@@ -20,10 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/header_strip"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="5dp"
-        android:text="@string/TITLE_PHONEBOOK"
-        android:textSize="42sp" >
+        android:text="@string/TITLE_PHONEBOOK" >
     </TextView>
 
 </RelativeLayout>

@@ -11,6 +11,7 @@ import java.util.List;
 import android.app.Activity;
 import android.content.Context;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -81,11 +82,6 @@ public class EntryListFragment extends Fragment {
 	private EntryRepository entryRepository;
 
 	/**
-	 * An asynch loader for the @Entry data
-	 */
-	private AsynchDataLoader asynchDataLoader;
-
-	/**
 	 * A list of Entries shown in this fragment
 	 */
 	private List<Entry> entries = new ArrayList<Entry>();
@@ -118,7 +114,7 @@ public class EntryListFragment extends Fragment {
 
 		super.onActivityCreated(savedInstanceState);
 
-		this.registerForContextMenu(entryListView);
+		registerForContextMenu(entryListView);
 
 		// get the context
 		mcontext = this.getActivity();
@@ -185,11 +181,8 @@ public class EntryListFragment extends Fragment {
 		// Start with a progress indicator.
 		setListShown(false);
 
-		// craete a new instance of the AsynchDataLoader
-		asynchDataLoader = new AsynchDataLoader();
-
 		// start the asynch loader
-		asynchDataLoader.execute(getCategoryName());
+		reloadDataSet();
 
 		// return the root view
 		return rootView;
@@ -287,6 +280,9 @@ public class EntryListFragment extends Fragment {
 		@Override
 		protected List<Entry> doInBackground(String... params) {
 
+			// the user expects this specific background task to complete fast
+			Thread.currentThread().setPriority(Thread.MAX_PRIORITY);
+
 			// read the category name
 			String categoryName = params[0];
 
@@ -322,7 +318,13 @@ public class EntryListFragment extends Fragment {
 	public void reloadDataSet() {
 
 		// reload data asynchronously
-		new AsynchDataLoader().execute(categoryName);
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+			new AsynchDataLoader().executeOnExecutor(AsynchDataLoader.THREAD_POOL_EXECUTOR,
+					categoryName);
+		} else {
+			new AsynchDataLoader().execute(categoryName);
+		}
+
 	}
 
 	/**

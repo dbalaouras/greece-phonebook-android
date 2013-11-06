@@ -69,7 +69,7 @@ public class EntryListActivity extends BaseActivity {
 	private EntryRepository entryRepository;
 
 	/**
-	 * 
+	 * Store the category that was selected by the user
 	 */
 	private String selectedCategory;
 
@@ -152,6 +152,7 @@ public class EntryListActivity extends BaseActivity {
 	 */
 	private void loadViewPager() {
 
+		// load all categories
 		List<EntryCategory> entryCategories = loadCategories();
 
 		mSectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager(),

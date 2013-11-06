@@ -45,6 +45,9 @@
     <style name="logo_title">
         <item name="android:textColor">#33b5e5</item>
         <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:textSize">42sp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
     </style>
 
     <style name="pager_title" parent="@android:style/TextAppearance">
