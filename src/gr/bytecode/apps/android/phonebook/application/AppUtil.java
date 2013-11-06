@@ -92,12 +92,16 @@ public class AppUtil {
 	 */
 	public static boolean isDeviceConnected(Context context) {
 
+		// get a ConnectivityManager from the context
 		ConnectivityManager connectivity = (ConnectivityManager) context
 				.getSystemService(Context.CONNECTIVITY_SERVICE);
+
+		// double check if we got a ConnectivityManager at all
 		if (connectivity == null) {
 
 			return false;
 		} else {
+
 			NetworkInfo[] info = connectivity.getAllNetworkInfo();
 			if (info != null) {
 				for (int i = 0; i < info.length; i++) {
@@ -107,7 +111,6 @@ public class AppUtil {
 				}
 			}
 		}
-		logDebug("Device is finall NOT connected");
 		return false;
 	}
 

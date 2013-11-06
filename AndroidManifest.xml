@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="gr.bytecode.apps.android.phonebook"
-    android:versionCode="5"
-    android:versionName="Rhodes 1.0.5 Beta" >
+    android:versionCode="6"
+    android:versionName="1.0.6.BETA" >
 
     <!-- specify the target and min sdk versions -->
     <uses-sdk
