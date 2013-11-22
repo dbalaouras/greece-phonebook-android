@@ -8,6 +8,7 @@ import gr.bytecode.apps.android.phonebook.ui.adapters.EntryListAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.os.AsyncTask;
@@ -315,6 +316,7 @@ public class EntryListFragment extends Fragment {
 	 * 
 	 * @param categoryName
 	 */
+	@SuppressLint("NewApi")
 	public void reloadDataSet() {
 
 		// reload data asynchronously

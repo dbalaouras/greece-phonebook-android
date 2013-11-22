@@ -8,7 +8,6 @@
     <string name="TITLE_EDIT_ENTRY">Επεξεργασία εγγραφής</string>
     <string name="TITLE_ADD_ENTRY">Προσθήκη εγγραφής</string>
     <string name="ACTION_SETTINGS">Ρυθμίσεις</string>
-    <string name="ACTION_SYNCH">Ενημέρωση καταλόγου</string>
     <string name="LBL_VISIT_BYTECODE">Άνοιγμα της ιστοσελίδας</string>
     <string name="LBL_POLICE">Αστυνομία</string>
     <string name="LBL_HELPLINES">Γραμμή Βοήθειας</string>
@@ -18,13 +17,9 @@
     <string name="LBL_INFORMATION">Γενικές Πληροφορίες</string>
     <string name="LBL_EMERGENCY">Επείγοντα</string>
     <string name="LBL_HEALTHCARE">Υγειονομικά</string>
-    <string name="LBL_112">Κλήση 112</string>
     <string name="LBL_SETTINGS">Ρυθμίσεις</string>
     <string name="LBL_CHECK_DATA_NOW">Έλεγχος δεδομένων τώρα</string>
-    <string name="LBL_RELOAD_DATA_NOW">Επαναφόρτωση δεδομένων</string>
     <string name="LBL_SEND_EMAIL">Ε-mail</string>
-    <string name="LBL_CANCEL">Άκυρο</string>
-    <string name="LBL_OKAY">Εντάξει</string>
     <string name="LBL_SAVE">Αποθήκευση</string>
     <string name="TXT_CAT_DATA_SYNCH">Ενημερώσεις δεδομένων</string>
     <string name="TXT_TITLE_AUTO_DATA_CHECK">Αυτόματες ενημερώσεις</string>
@@ -34,7 +29,6 @@
     <string name="TXT_ACTIVE">Ενεργό</string>
     <string name="TXT_INACTIVE">Ανενεργό</string>
     <string name="TXT_NEVER_CHECKED">Δεν έγινε έλεγχος</string>
-    <string name="TXT_NEVER_UPDATED">Δεν έγινε ενημέρωση</string>
     <string name="TXT_SEND_US_AN_EMAIL">Στείλε μας ένα σχόλιο</string>
     <string name="TXT_BYTECODE_EMAIL">phonebook@bytecode.gr</string>
     <string name="TXT_BYTECODE_URL">http://bytecode.gr</string>
@@ -46,7 +40,6 @@
     <string name="ΤΧΤ_EVERY_30_DAYS">Μηνιαίως</string>
     <string name="ΤΧΤ_EVERY_90_DAYS">Ανα τρίμηνο</string>
     <string name="TXT_TITLE_LAST_DATA_UPDATE">Τελευταία ενημέρωση</string>
-    <string name="TXT_DATA_UPDATED">Τα δεδομένα ενημερώθηκαν</string>
     <string name="TXT_UPDATE_STARTED">Η διαδικασία ανανέωσης δεδομένων ξεκίνησε</string>
     <string name="TXT_CLOSE">Κλείσιμο</string>
     <string name="TXT_UPDATE_NOW">Ανανέωση τώρα</string>
@@ -80,7 +73,6 @@
     <string name="ERROR_NOT_VALID_WEB_ADDRESS">This is not a valid Web Address</string>
     <string name="ERROR_REQUIRED_FIELD">Required data</string>
     <string name="ERROR_NO_NETWORK">Internet connection is not available at this time</string>
-    <string name="TXT_HTTP_PREFIX">http://</string>
     <string name="TXT_CAT_BYTECODE">ByteCode.gr</string>
 
 </resources>

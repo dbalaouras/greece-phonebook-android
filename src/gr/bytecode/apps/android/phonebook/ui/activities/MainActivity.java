@@ -3,7 +3,6 @@ package gr.bytecode.apps.android.phonebook.ui.activities;
 import gr.bytecode.apps.android.phonebook.R;
 import gr.bytecode.apps.android.phonebook.application.AppConstants;
 import gr.bytecode.apps.android.phonebook.application.AppUtil;
-import gr.bytecode.apps.android.phonebook.repositories.PreferencesRepository;
 import android.content.Intent;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -38,14 +37,10 @@ public class MainActivity extends BaseActivity {
 		// create the activity that will start the list
 		activityIntent = new Intent(mcontext, EntryListActivity.class);
 
-		// get a preferences repository
-		PreferencesRepository preferecensRepository = PreferencesRepository.getInstance(mcontext);
-
 		// check whether we need to set the default values on the preferences
-		if (!preferecensRepository.isDefaultPreferencesSet()) {
+		if (!preferencesRepository.isDefaultPreferencesSet()) {
 			PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
 		}
-
 	}
 
 	/*

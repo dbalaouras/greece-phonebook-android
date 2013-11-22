@@ -83,6 +83,8 @@ public class PreferencesActivity extends SherlockPreferenceActivity implements
 	 */
 	private PreferenceScreen prefScreen;
 
+	private boolean isRunning;
+
 	private static String PREF_AUTO_DATA_CHECK_INTERVAL;
 
 	/*
@@ -322,6 +324,9 @@ public class PreferencesActivity extends SherlockPreferenceActivity implements
 	@Override
 	protected void onResume() {
 
+		// android is resuming our app
+		isRunning = true;
+
 		// Call super
 		super.onResume();
 
@@ -346,6 +351,9 @@ public class PreferencesActivity extends SherlockPreferenceActivity implements
 	protected void onPause() {
 
 		super.onPause();
+
+		// android is resuming our app
+		isRunning = false;
 
 		// Unregister the listener whenever a key changes
 		prefScreen.getSharedPreferences().unregisterOnSharedPreferenceChangeListener(this);
@@ -565,8 +573,12 @@ public class PreferencesActivity extends SherlockPreferenceActivity implements
 			// we are now done
 			finishedDataCheckTask();
 
-			// open the data-update dialog
-			showUpdateDialog(result);
+			// show the dialog only if the activity is running
+			if (isRunning) {
+
+				// open the data-update dialog
+				showUpdateDialog(result);
+			}
 
 		}
 

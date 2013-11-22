@@ -98,7 +98,6 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/menu_emergency"
                 style="@style/main_menu_tile_top"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

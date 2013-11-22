@@ -61,7 +61,7 @@ abstract public class BaseActivity extends SherlockFragmentActivity implements S
 	/**
 	 * A repository for the application preferences (controlled by the user)
 	 */
-	private PreferencesRepository preferencesRepository;
+	protected PreferencesRepository preferencesRepository;
 
 	/**
 	 * ActivityforResult request codes

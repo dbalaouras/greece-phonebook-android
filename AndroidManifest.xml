@@ -6,7 +6,7 @@
 
     <!-- specify the target and min sdk versions -->
     <uses-sdk
-        android:minSdkVersion="7"
+        android:minSdkVersion="8"
         android:targetSdkVersion="19" />
 
     <!-- Set the permissions -->

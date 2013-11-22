@@ -9,7 +9,6 @@
     <string name="PREF_DATA_CHECK_NOW">pref_check_data_now</string>
     <string name="PREF_VISIT_BYTECODE">pref_visit_bytecode</string>
     <string name="PREF_DATA_UPDATE_NOW">pref_update_data_now</string>
-    <string name="PREF_DATA_AVAILABLE">pref_is_data_available</string>
     <string name="PREF_EMAIL_US">pref_emailus</string>
     <string name="PREFCAT_DATA_SYNCH">pref_data_synch</string>
     <string name="PREFCAT_BYTECODE">pref_bytecode</string>

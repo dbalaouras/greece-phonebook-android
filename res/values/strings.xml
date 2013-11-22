@@ -8,7 +8,6 @@
     <string name="TITLE_EDIT_ENTRY">Edit Entry</string>
     <string name="TITLE_ADD_ENTRY">Add Entry</string>
     <string name="ACTION_SETTINGS">Settings</string>
-    <string name="ACTION_SYNCH">Update Data</string>
     <string name="LBL_VISIT_BYTECODE">Visit ByteCode</string>
     <string name="LBL_POLICE">Police</string>
     <string name="LBL_HELPLINES">Helplines</string>
@@ -18,13 +17,9 @@
     <string name="LBL_INFORMATION">General Info</string>
     <string name="LBL_EMERGENCY">Emergency</string>
     <string name="LBL_HEALTHCARE">Healthcare</string>
-    <string name="LBL_112">Call 112</string>
     <string name="LBL_SETTINGS">Settings</string>
     <string name="LBL_CHECK_DATA_NOW">Check for new data now</string>
-    <string name="LBL_RELOAD_DATA_NOW">Reload data now</string>
     <string name="LBL_SEND_EMAIL">Contact Bytecode</string>
-    <string name="LBL_CANCEL">Cancel</string>
-    <string name="LBL_OKAY">OKAY</string>
     <string name="LBL_SAVE">Save</string>
     <string name="TXT_CAT_DATA_SYNCH">Data Updates</string>
     <string name="TXT_CAT_BYTECODE">ByteCode.gr</string>
@@ -35,7 +30,6 @@
     <string name="TXT_ACTIVE">Active</string>
     <string name="TXT_INACTIVE">Inactive</string>
     <string name="TXT_NEVER_CHECKED">Never checked</string>
-    <string name="TXT_NEVER_UPDATED">Never updated</string>
     <string name="TXT_SEND_US_AN_EMAIL">Send us your feedback</string>
     <string name="TXT_BYTECODE_EMAIL">phonebook@bytecode.gr</string>
     <string name="TXT_BYTECODE_URL">http://bytecode.gr</string>
@@ -47,7 +41,6 @@
     <string name="ΤΧΤ_EVERY_30_DAYS">Monthly</string>
     <string name="ΤΧΤ_EVERY_90_DAYS">Quarterly</string>
     <string name="TXT_TITLE_LAST_DATA_UPDATE">Last update</string>
-    <string name="TXT_DATA_UPDATED">Phonebook data has been updated to the latest version</string>
     <string name="TXT_UPDATE_STARTED">Update process has started</string>
     <string name="TXT_CLOSE">Close</string>
     <string name="TXT_UPDATE_NOW">Update now</string>
@@ -70,7 +63,6 @@
     <string name="TXT_DELETE">Delete</string>
     <string name="TXT_MANAGE_ENTRY">Manage entry</string>
     <string name="TXT_ENTRY_REMOVED">Entry removed</string>
-    <string name="TXT_HTTP_PREFIX">http://</string>
     <string name="TXT_CUSTOM">User defined</string>
     <string name="TXT_EMPTY_ENTRY_LIST_TIP">Tap the plus symbol on the menu to add a new entry</string>
     <string name="TXT_UPDATE_CATEGORY">Update Category</string>

@@ -208,7 +208,8 @@ public class EntryListActivity extends BaseActivity {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see android.app.Activity#onCreateOptionsMenu(android.view.Menu)
+	 * @see gr.bytecode.apps.android.phonebook.ui.activities.BaseActivity#
+	 * onCreateOptionsMenu(com.actionbarsherlock.view.Menu)
 	 */
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -216,7 +217,7 @@ public class EntryListActivity extends BaseActivity {
 		// add the default menu
 		getSupportMenuInflater().inflate(R.menu.service_list_menu, menu);
 
-		return super.onCreateOptionsMenu(menu);
+		return true;
 	}
 
 	/*
